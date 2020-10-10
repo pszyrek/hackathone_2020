@@ -1,0 +1,33 @@
+body {
+  background-color: ;
+}
+
+.navbar {
+  background-color: transparent;
+  background-color: #191919;
+}
+
+.code_vid {
+  color: #04a4da;
+}
+
+.custom-navbar-item {
+  color: #ffffff;
+}
+
+.custom-navbar-item:hover {
+  background-color: #252525;
+  color: #04a4da !important;
+}
+
+.custom-button-partners {
+  background-color: #191919;
+  border-color: #191919;
+  transition: color 200ms, border-color 200ms;
+  color: white;
+}
+
+.custom-button-partners:hover {
+  color: #04a4da;
+  border-color: #04a4da;
+}
