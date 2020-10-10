@@ -1,3 +1,68 @@
-.dupa1 {
-  background-color: pink;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #191919;
+  min-height: 100vh;
+}
+
+.container {
+  width: fit-content;
+  padding: 20px 25px;
+}
+
+.container-bottom-right, .container-bottom-left {
+  width: 100%;
+  height: 100%;
+}
+
+.container-top-right::before {
+  content : "";
+  position: absolute;
+  right    : 0;
+  top  : 0;
+  height  : 1px;
+  width   : 60%;  /* or 100px */
+  border-top:5px solid #313131;
+}
+
+.container-top-right::after{
+  content : "";
+  position: absolute;
+  top    : 0;
+  right : 0;
+  height  : 60%;
+  width   : 1px;  /* or 100px */
+  border-right:5px solid #313131;
+}
+
+.container-bottom-left::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 63%;  /* or 100px */
+  border-bottom:5px solid #313131;
+}
+
+.container-bottom-left::after{
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 65%;
+  width   : 1px;  /* or 100px */
+  border-left:5px solid #313131;
+}
+
+.container-title {
+  color: #04A4DA;
+  font-size: 4em;
+}
+
+.remote-background {
+  background: url(assets/images/container-background.jpg) center center no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
 }
